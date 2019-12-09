@@ -23,8 +23,7 @@ p hash_3({ a: 2, b: 5, c: 1 })
 
 
 def hash_4(hash)
-
-
-
+  hash.map{|key,value|[value.to_s, key.to_s]}.to_h
+end
 
 p hash_4({ a: 1, b: 2, c: 3 })
